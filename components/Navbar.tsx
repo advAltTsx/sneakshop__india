@@ -58,7 +58,25 @@ export default function NavBar() {
       <CommandInput placeholder="Search or navigate pages..." />
       <CommandList>
         <CommandEmpty>No results found.</CommandEmpty>
-        
+        <CommandGroup heading="Season Breeds">
+          <CommandItem>
+            <span>Summer Sneakers</span>
+            </CommandItem>
+          <CommandItem>
+            <span>Winter Sneakers</span>
+            </CommandItem>
+        </CommandGroup>
+        <CommandGroup heading="Type Breeds">
+          <CommandItem>
+            <span>Sport Sneakers</span>
+            </CommandItem>
+          <CommandItem>
+            <span>Runner Sneakers</span>
+            </CommandItem>
+          <CommandItem>
+            <span>All typed Sneakers</span>
+            </CommandItem>
+        </CommandGroup>
         <CommandSeparator />
         <CommandGroup heading="Settings">
           <CommandItem>

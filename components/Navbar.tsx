@@ -49,10 +49,10 @@ export default function NavBar() {
           <DrawerTrigger>
             {" "}
             <button className="shadow-[0_0_0_3px_#000000_inset] pl-2 pr-32 w-full py-1 bg-transparent border text-sm text-white/80 border-black dark:border-white dark:text-white/70 text-black rounded-lg transform  transition duration-400">
-              Search...
+              Search Pages...
             </button>
           </DrawerTrigger>
-          <DrawerContent className="bg-black">
+          <DrawerContent className="bg-black border-0">
             <div className="w-full h-auto p-8 flex items-center justify-center">
             <Command className="rounded-lg bg-black">
       <CommandInput placeholder="Search or navigate pages..." />
@@ -90,7 +90,7 @@ export default function NavBar() {
 <path d="M5 9H13H19M5 15H19" stroke="white" stroke-width="2" stroke-linecap="round"/>
 </svg>
 </button></SheetTrigger>
-  <SheetContent side={'left'} className="bg-black">
+  <SheetContent side={'left'} className="bg-black border-0">
     <div className="h-full w-full py-24">
             
             <div className="flex items-center p-4"><PersonIcon className="mr-2 h-4 w-4" />

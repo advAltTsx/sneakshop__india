@@ -69,8 +69,8 @@ export default function Home() {
       ),
     },
     {
-      title: "All typed",
-      value: "All",
+      title: "Casuals",
+      value: "Casuals",
       content: (
         <div className="w-full flex items-center justify-center h032 overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-zinc-900/70 to-zinc-950/80">
           {/* <p className=" text-white"></p>
@@ -78,7 +78,7 @@ export default function Home() {
           <p className=" text-white">SA-B</p>
           <p className=" text-white">SA-B</p> */}
 
-                    <p className=" text-white">All typed Sneakers</p>
+                    <p className=" text-white">Casual Sneakers</p>
                   </div>
       ),
     },

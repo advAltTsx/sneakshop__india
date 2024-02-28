@@ -176,7 +176,7 @@ export default function Home() {
       <div className="min-h-screen pb-24 h-full w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex items-center justify-center">
         {/* Radial gradient for the container to give a faded look */}
         <div className="absolute pointer-events-none inset-0 flex  items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
-        <div data-aos="fade-left" className="flex flex-col justify-center px-6">
+        <div data-aos="fade-right" className="flex flex-col justify-center px-6">
           <span className=" text-center">
         <p className="text-white font-extrabold text-xl p-5">See our products</p>
         </span>

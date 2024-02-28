@@ -55,11 +55,7 @@ export default function Home() {
       value: "Sports",
       content: (
         <div className="w-full flex items-center justify-center h032 overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-zinc-900/70 to-zinc-950/80">
-          {/* <p className=" text-white"></p>
-          <p className=" text-white">SA-B</p>
-          <p className=" text-white">SA-B</p>
-          <p className=" text-white">SA-B</p> */}
-
+          
                     <p className=" text-white">Sport Sneakers</p>
                   </div>
       ),
@@ -69,10 +65,7 @@ export default function Home() {
       value: "Running",
       content: (
         <div className="w-full flex items-center justify-center h032 overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-zinc-900/70 to-zinc-950/80">
-          {/* <p className=" text-white"></p>
-          <p className=" text-white">SA-B</p>
-          <p className=" text-white">SA-B</p>
-          <p className=" text-white">SA-B</p> */}
+          
 
                     <p className=" text-white">Runner Sneakers</p>
                   </div>
@@ -83,11 +76,7 @@ export default function Home() {
       value: "Casuals",
       content: (
         <div className="w-full flex items-center justify-center h032 overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-zinc-900/70 to-zinc-950/80">
-          {/* <p className=" text-white"></p>
-          <p className=" text-white">SA-B</p>
-          <p className=" text-white">SA-B</p>
-          <p className=" text-white">SA-B</p> */}
-
+          
                     <p className=" text-white">Casual Sneakers</p>
                   </div>
       ),

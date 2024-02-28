@@ -49,7 +49,7 @@ export default function NavBar() {
           <DrawerTrigger>
             {" "}
             <button className="shadow-[0_0_0_3px_#000000_inset] pl-2 pr-32 w-full py-1 bg-transparent border text-sm text-white/80 border-black dark:border-white dark:text-white/70 text-black rounded-lg transform  transition duration-400">
-              Search Pages...
+              Search...
             </button>
           </DrawerTrigger>
           <DrawerContent className="bg-black border-0">

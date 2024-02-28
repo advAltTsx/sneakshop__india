@@ -78,7 +78,7 @@ export default function NavBar() {
             </CommandItem>
         </CommandGroup>
         <CommandSeparator />
-        <CommandGroup heading="Settings">
+        <CommandGroup heading="Links">
           <CommandItem>
             <PersonIcon className="mr-2 h-4 w-4" />
             <span>Account</span>

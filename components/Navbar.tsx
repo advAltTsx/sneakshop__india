@@ -74,7 +74,7 @@ export default function NavBar() {
             <span>Runner Sneakers</span>
             </CommandItem>
           <CommandItem>
-            <span>All typed Sneakers</span>
+            <span>Casual Sneakers</span>
             </CommandItem>
         </CommandGroup>
         <CommandSeparator />

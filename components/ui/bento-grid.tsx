@@ -1,4 +1,8 @@
 import { cn } from "@/utils/cn";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+import React,{useEffect} from "react";
 
 export const BentoGrid = ({
   className,
@@ -32,8 +36,12 @@ export const BentoGridItem = ({
   header?: React.ReactNode;
   icon?: React.ReactNode;
 }) => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
     <div
+    data-aos='fade-left'
       className={cn(
         "row-span-1 rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:border-white/[0.2] bg-white border border-transparent justify-between flex flex-col space-y-4",
         className

@@ -1,3 +1,5 @@
+"use client"
+
 import NavBar from "@/components/Navbar";
 import Image from "next/image";
 import { TypewriterEffect } from "@/components/ui/typewriter-effect";
@@ -33,12 +35,20 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+import React,{useEffect} from "react";
+
 const Skeleton = () => (
   <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100"></div>
 );
 
 export default function Home() {
 
+  useEffect(() => {
+    AOS.init();
+  }, [])
   const tabs = [
     {
       title: "For Sports",
@@ -124,7 +134,7 @@ export default function Home() {
         {/* Radial gradient for the container to give a faded look */}
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
         <p className="text-4xl sm:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-8">
-          <div className="h-auto py-24 px-6 w-full rounded-xl flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
+          <div data-aos='fade-down' className="h-auto py-24 px-6 w-full rounded-xl flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
             <Spotlight
               className="-top-40 left-0 md:left-60 md:-top-20"
               fill="white"
@@ -166,13 +176,14 @@ export default function Home() {
       <div className="min-h-screen pb-24 h-full w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex items-center justify-center">
         {/* Radial gradient for the container to give a faded look */}
         <div className="absolute pointer-events-none inset-0 flex  items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
-        <div className="flex flex-col justify-center px-6">
+        <div data-aos="fade-left" className="flex flex-col justify-center px-6">
           <span className=" text-center">
         <p className="text-white font-extrabold text-xl p-5">See our products</p>
         </span>
         <BentoGrid className="max-w-4xl mx-auto">
       {items.map((item, i) => (
         <BentoGridItem
+        
           key={i}
           title={item.title}
           description={item.description}
@@ -187,8 +198,10 @@ export default function Home() {
       <div className="min-h-screen pb-24 h-full w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex items-center justify-center">
         {/* Radial gradient for the container to give a faded look */}
         <div className="absolute pointer-events-none inset-0 flex  items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
-        <div className="flex flex-col justify-center">
-          
+        <div data-aos="fade-right" className="flex flex-col justify-center">
+        <span className=" text-center">
+        <p className="text-white font-extrabold text-xl p-5">Meet Different Breeds</p>
+        </span>
         <Tabs tabs={tabs} />
     </div>
       </div>
@@ -197,24 +210,24 @@ export default function Home() {
         <div className="absolute pointer-events-none inset-0 flex  items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
         <div className="flex flex-col justify-center w-full px-4">
         <span className=" text-center">
-        <p className="text-white font-extrabold text-xl p-5">FAQs</p>
+        <p data-aos="fade-up" className="text-white font-extrabold text-xl p-5">FAQs</p>
         </span>
         <div className="flex w-full py-6 px-8 rounded-3xl bg-black/90 flex-col justify-center">
           
         <Accordion type="single" collapsible className="w-full">
-      <AccordionItem value="item-1">
+      <AccordionItem data-aos="fade-right" value="item-1">
         <AccordionTrigger>Refund Policy?</AccordionTrigger>
         <AccordionContent>
           Yeah.
         </AccordionContent>
       </AccordionItem>
-      <AccordionItem value="item-2">
+      <AccordionItem data-aos="fade-right" value="item-2">
         <AccordionTrigger>Ratings?</AccordionTrigger>
         <AccordionContent>
           Good.
         </AccordionContent>
       </AccordionItem>
-      <AccordionItem value="item-3">
+      <AccordionItem data-aos="fade-right" value="item-3">
         <AccordionTrigger>Origin country?</AccordionTrigger>
         <AccordionContent>
           India.  </AccordionContent>

@@ -135,7 +135,7 @@ export default function Home() {
               </h1>
               <p className="mt-4 font-normal text-base text-neutral-300 max-w-lg text-center mx-auto">
                 Visit our store today and experience the ultimate in sneaker
-                fashion. Your feet deserve the best - and we're here to make
+                fashion. Your feet deserve the best - and {"we're"} here to make
                 sure you step out in style, every time. Elevate your look.
                 Elevate your comfort. Elevate your game - only at{" "}
                 <span className="text-blue-500 font-bold dark:text-blue-500">

@@ -50,7 +50,7 @@ export default function Home() {
           <p className=" text-white">SA-B</p>
           <p className=" text-white">SA-B</p> */}
 
-                    <p className=" text-white">Sports Sneakers</p>
+                    <p className=" text-white">Sport Sneakers</p>
                   </div>
       ),
     },

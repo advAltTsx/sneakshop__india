@@ -220,7 +220,7 @@ export default function Home() {
     </div>
       </div>
       <div className="h-24 w-full bg-black flex items-center justify-center text-center">
-<p className=" font-extrabold text-sm text-white">©SneakShopIndia 2024 <br />Piyush Premand</p>
+<p className=" font-extrabold text-sm text-white">©SneakShopIndia 2024 <br />Piyush Premanand</p>
       </div>
     </main>
   );

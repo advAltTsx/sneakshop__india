@@ -41,7 +41,7 @@ export default function Home() {
 
   const tabs = [
     {
-      title: "For Summer",
+      title: "For Sports",
       value: "Summer",
       content: (
         <div className="w-full flex items-center justify-center h032 overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-zinc-900/70 to-zinc-950/80">
@@ -50,12 +50,12 @@ export default function Home() {
           <p className=" text-white">SA-B</p>
           <p className=" text-white">SA-B</p> */}
 
-                    <p className=" text-white">Summer Time Sneakers</p>
+                    <p className=" text-white">Sports Sneakers</p>
                   </div>
       ),
     },
     {
-      title: "For Winter",
+      title: "For Running",
       value: "Winter",
       content: (
         <div className="w-full flex items-center justify-center h032 overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-zinc-900/70 to-zinc-950/80">
@@ -64,13 +64,13 @@ export default function Home() {
           <p className=" text-white">SA-B</p>
           <p className=" text-white">SA-B</p> */}
 
-                    <p className=" text-white">Winter Time Sneakers</p>
+                    <p className=" text-white">Runner Sneakers</p>
                   </div>
       ),
     },
     {
-      title: "All seasons",
-      value: "All",
+      title: "",
+      value: "All Sneakers",
       content: (
         <div className="w-full flex items-center justify-center h032 overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-zinc-900/70 to-zinc-950/80">
           {/* <p className=" text-white"></p>
@@ -78,7 +78,7 @@ export default function Home() {
           <p className=" text-white">SA-B</p>
           <p className=" text-white">SA-B</p> */}
 
-                    <p className=" text-white">All Time Sneakers</p>
+                    <p className=" text-white">All Sneakers</p>
                   </div>
       ),
     },

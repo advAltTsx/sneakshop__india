@@ -42,7 +42,7 @@ export default function Home() {
   const tabs = [
     {
       title: "For Sports",
-      value: "Summer",
+      value: "Sports",
       content: (
         <div className="w-full flex items-center justify-center h032 overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-zinc-900/70 to-zinc-950/80">
           {/* <p className=" text-white"></p>
@@ -56,7 +56,7 @@ export default function Home() {
     },
     {
       title: "For Running",
-      value: "Winter",
+      value: "Running",
       content: (
         <div className="w-full flex items-center justify-center h032 overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-zinc-900/70 to-zinc-950/80">
           {/* <p className=" text-white"></p>
@@ -70,7 +70,7 @@ export default function Home() {
     },
     {
       title: "All typed",
-      value: "All Sneakers",
+      value: "All",
       content: (
         <div className="w-full flex items-center justify-center h032 overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-zinc-900/70 to-zinc-950/80">
           {/* <p className=" text-white"></p>
@@ -135,7 +135,7 @@ export default function Home() {
               </h1>
               <p className="mt-4 font-normal text-base text-neutral-300 max-w-lg text-center mx-auto">
                 Visit our store today and experience the ultimate in sneaker
-                fashion. Your feet deserve the best - and {"we're"} here to make
+                fashion. Your feet deserve the best - and we're here to make
                 sure you step out in style, every time. Elevate your look.
                 Elevate your comfort. Elevate your game - only at{" "}
                 <span className="text-blue-500 font-bold dark:text-blue-500">
@@ -177,7 +177,6 @@ export default function Home() {
           title={item.title}
           description={item.description}
           header={item.header}
-      
           className={i === 3 || i === 6 ? "md:col-span-2" : ""}
         />
       ))}
@@ -193,9 +192,13 @@ export default function Home() {
         <Tabs tabs={tabs} />
     </div>
       </div>
-      <div className="min-h-screen px-4 pb-24 h-full w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex items-center justify-center">
+      <div className="min-h-screen pb-24 h-full w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex items-center justify-center">
         {/* Radial gradient for the container to give a faded look */}
         <div className="absolute pointer-events-none inset-0 flex  items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+        <div className="flex flex-col justify-center w-full px-4">
+        <span className=" text-center">
+        <p className="text-white font-extrabold text-xl p-5">FAQs</p>
+        </span>
         <div className="flex w-full py-6 px-8 rounded-3xl bg-black/90 flex-col justify-center">
           
         <Accordion type="single" collapsible className="w-full">
@@ -217,6 +220,7 @@ export default function Home() {
           India.  </AccordionContent>
       </AccordionItem>
     </Accordion>
+    </div>
     </div>
       </div>
       <div className="h-24 w-full bg-black flex items-center justify-center text-center">

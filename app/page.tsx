@@ -51,7 +51,7 @@ export default function Home() {
   }, [])
   const tabs = [
     {
-      title: "For Sports",
+      title: "Sporty",
       value: "Sports",
       content: (
         <div className="w-full flex items-center justify-center h032 overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-zinc-900/70 to-zinc-950/80">
@@ -65,7 +65,7 @@ export default function Home() {
       ),
     },
     {
-      title: "For Running",
+      title: "Runners",
       value: "Running",
       content: (
         <div className="w-full flex items-center justify-center h032 overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-zinc-900/70 to-zinc-950/80">

@@ -40,12 +40,21 @@ import {
     SheetTrigger,
   } from "@/components/ui/sheet"
 
+  import {
+    Dialog,
+    DialogContent,
+    DialogDescription,
+    DialogHeader,
+    DialogTitle,
+    DialogTrigger,
+  } from "@/components/ui/dialog"
+
 export default function NavBar() {
   return (
     <nav className="flex h-24 w-full bg-black">
       <div className=" h-full w-1/5 p-6"></div>
       <div className="h-full w-3/5 p-6 flex items-center justify-center">
-        <Drawer>
+        {/* <Drawer>
           <DrawerTrigger>
             {" "}
             <button className="shadow-[0_0_0_3px_#000000_inset] pl-2 pr-32 w-full py-1 bg-transparent border text-sm text-white/80 border-black dark:border-white dark:text-white/70 text-black rounded-lg transform  transition duration-400">
@@ -99,7 +108,60 @@ export default function NavBar() {
     </Command>
             </div>
           </DrawerContent>
-        </Drawer>
+        </Drawer> */}
+        <Dialog>
+  <DialogTrigger><button className="shadow-[0_0_0_3px_#000000_inset] pl-2 pr-32 w-full py-1 bg-transparent border text-sm text-white/80 border-black dark:border-white dark:text-white/70 text-black rounded-lg transform  transition duration-400">
+              Search...
+            </button></DialogTrigger>
+  <DialogContent className="bg-black border-0">
+  <div className="w-full h-auto p-8 flex items-center justify-center">
+            <Command className="rounded-lg bg-black">
+      <CommandInput placeholder="Search or navigate pages..." />
+      <CommandList>
+        <CommandEmpty>No results found.</CommandEmpty>
+        <CommandGroup heading="Season Breeds">
+          <CommandItem>
+            <span>Summer Sneakers</span>
+            </CommandItem>
+          <CommandItem>
+            <span>Winter Sneakers</span>
+            </CommandItem>
+        </CommandGroup>
+        <CommandGroup heading="Type Breeds">
+          <CommandItem>
+            <span>Sport Sneakers</span>
+            </CommandItem>
+          <CommandItem>
+            <span>Runner Sneakers</span>
+            </CommandItem>
+          <CommandItem>
+            <span>Casual Sneakers</span>
+            </CommandItem>
+        </CommandGroup>
+        <CommandSeparator />
+        <CommandGroup heading="Links">
+          <CommandItem>
+            <PersonIcon className="mr-2 h-4 w-4" />
+            <span>Account</span>
+            <CommandShortcut>⌘A</CommandShortcut>
+          </CommandItem>
+          <CommandItem>
+            <EnvelopeClosedIcon className="mr-2 h-4 w-4" />
+            <span>Notifications</span>
+            <CommandShortcut>⌘N</CommandShortcut>
+          </CommandItem>
+          <CommandItem>
+            <GearIcon className="mr-2 h-4 w-4" />
+            <span>Settings</span>
+            <CommandShortcut>⌘S</CommandShortcut>
+          </CommandItem>
+        </CommandGroup>
+      </CommandList>
+    </Command>
+            </div>
+  </DialogContent>
+</Dialog>
+
       </div>
       <div className=" h-full w-1/5 p-6  flex items-center justify-center">
 

@@ -173,7 +173,7 @@ export default function Home() {
       <div className="min-h-screen pb-24 h-full w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex items-center justify-center">
         {/* Radial gradient for the container to give a faded look */}
         <div className="absolute pointer-events-none inset-0 flex  items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
-        <div data-aos="fade-left" className="flex flex-col justify-center px-6">
+        <div data-aos="fade-right" className="flex flex-col justify-center px-6">
           <span className=" text-center">
         <p className="text-white font-extrabold text-xl p-5">See our products</p>
         </span>
@@ -195,7 +195,7 @@ export default function Home() {
       <div className="min-h-screen pb-24 h-full w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex items-center justify-center">
         {/* Radial gradient for the container to give a faded look */}
         <div className="absolute pointer-events-none inset-0 flex  items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
-        <div data-aos="fade-left" className="flex flex-col justify-center">
+        <div data-aos="fade-right" className="flex flex-col justify-center">
         <span className=" text-center">
         <p className="text-white font-extrabold text-xl p-5">Meet Different Breeds</p>
         </span>
@@ -212,19 +212,19 @@ export default function Home() {
         <div className="flex w-full py-6 px-8 rounded-3xl bg-black/90 flex-col justify-center">
           
         <Accordion type="single" collapsible className="w-full">
-      <AccordionItem data-aos="fade-left" value="item-1">
+      <AccordionItem data-aos="fade-right" value="item-1">
         <AccordionTrigger>Refund Policy?</AccordionTrigger>
         <AccordionContent>
           Yeah.
         </AccordionContent>
       </AccordionItem>
-      <AccordionItem data-aos="fade-left" value="item-2">
+      <AccordionItem data-aos="fade-right" value="item-2">
         <AccordionTrigger>Ratings?</AccordionTrigger>
         <AccordionContent>
           Good.
         </AccordionContent>
       </AccordionItem>
-      <AccordionItem data-aos="fade-left" value="item-3">
+      <AccordionItem data-aos="fade-right" value="item-3">
         <AccordionTrigger>Origin country?</AccordionTrigger>
         <AccordionContent>
           India.  </AccordionContent>
